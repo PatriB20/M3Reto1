@@ -15,7 +15,7 @@ let person1 = new Person("Pepe","Lopez",23)
 
 
 
-// functionReadline("123.json")
-escribirJson("123.json",person1)
+readline.functionReadline("123.json")
+// fs.escribirJson("123.json",person1)
 
 
