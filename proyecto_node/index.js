@@ -1,7 +1,7 @@
 const fs = require('fs')
 const readline = require("readline")
 const escribirJson =require("./writeAndReadObject")
-const funtionReadline = require ("./readConsole")
+const functionReadline = require ("./readConsole")
 
 class Person{
     constructor(name,surname,age)
@@ -15,7 +15,7 @@ let person1 = new Person("Pepe","Lopez",23)
 
 
 
-funtionReadline("123.json")
-// escribirJson("123.json",person1)
+// functionReadline("123.json")
+escribirJson("123.json",person1)
 
 

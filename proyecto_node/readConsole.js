@@ -1,4 +1,17 @@
-function funtionReadline(archivo){
+const readline = require("readline")
+const fs = require('fs')
+
+
+class Person{
+    constructor(name,surname,age)
+    {
+        this.name=name
+        this.surname=surname
+        this.age=age
+    }
+}
+
+function functionReadline(archivo){
 let rl= readline.createInterface({input:process.stdin, output:process.stdout});
 rl.question("Name: ", (name)=>
             {
@@ -11,7 +24,7 @@ rl.question("Name: ", (name)=>
                 console.log(age)
                 let person2 = new Person (name,surname,age) 
                 console.log(person2)
-                fs.writeFile(archivo,JSON.stringify(person1),()=>{
+                fs.writeFile(archivo,JSON.stringify(person2),()=>{
                         fs.readFile(archivo,"utf-8",(err,data) => {
                             if(err)
                             {
@@ -32,5 +45,7 @@ rl.question("Name: ", (name)=>
          
             )
 }
+// funtionReadline("12345.JSON")
 
-module.exports={funtionReadline}
+
+module.exports={functionReadline}

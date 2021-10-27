@@ -1,7 +1,6 @@
 {
-  "name": "proyecto_node",
+  "name": "hola",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "readline": "^1.3.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
